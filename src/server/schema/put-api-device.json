@@ -1,0 +1,19 @@
+{
+  "$id": "/put-api-device-id",
+  "title": "updating device",
+  "description": "JSON Schema for updating device",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "firmwareVersion": {
+      "type": "string"
+    },
+    "firmwareRevision": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}

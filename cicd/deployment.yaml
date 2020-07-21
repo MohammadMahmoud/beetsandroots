@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    container_name: express.devices.api.v1
+    restart: always
+    build: ../.
+    image: express.devices.api
+    environment:
+      - PORT=3001
+      - APP_NAME=Products REST API
+      - APP_VER=0.0.1
+      - NODE_ENV=production
+      - LOGGING=production
+      - MONGDB_HOST=mongo:27017/devices
+    ports:
+      - '5000:5000'

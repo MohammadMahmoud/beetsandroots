@@ -1,0 +1,33 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Product REST API",
+    "description": "",
+    "version": "1.0"
+  },
+  "produces": ["application/json"],
+  "paths": {
+    "/api/product": {
+      "get": {
+        "x-swagger-router-controller": "product",
+        "operationId": "index",
+        "tags": ["Get list of products"],
+        "description": "Fetch list of products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "No products found"
+          },
+          "408": {
+            "description": "Request Timeout"
+          },
+          "500": {
+            "description": "Server Crash"
+          }
+        }
+      }
+    }
+  }
+}

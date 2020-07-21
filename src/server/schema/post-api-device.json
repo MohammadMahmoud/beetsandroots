@@ -1,0 +1,19 @@
+{
+  "$id": "/post-api-device",
+  "title": "creating device",
+  "description": "JSON Schema for creating device",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "firmwareVersion": {
+      "type": "string"
+    },
+    "firmwareRevision": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["name", "firmwareVersion", "firmwareRevision"]
+}
